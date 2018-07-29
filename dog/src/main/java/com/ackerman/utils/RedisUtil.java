@@ -49,8 +49,26 @@ public class RedisUtil {
         try{
             return jedisCluster.del(key);
         }catch (Exception e){
-            logger.error("Redis集群get()异常， key:" + key);
+            logger.error("Redis集群del()异常， key:" + key);
         }
         return -1L;
+    }
+
+    public long _setnx(String key, String val){
+        try{
+            return jedisCluster.setnx(key, val);
+        }catch (Exception e){
+            logger.error("Redis集群setnx()异常， key:" + key);
+        }
+        return -1L;
+    }
+
+    public String _getSet(String key, String val){
+        try{
+            return jedisCluster.getSet(key, val);
+        }catch (Exception e){
+            logger.error("Redis集群getSet()异常， key:" + key);
+        }
+        return null;
     }
 }
