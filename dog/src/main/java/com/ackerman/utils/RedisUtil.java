@@ -45,6 +45,15 @@ public class RedisUtil {
         return null;
     }
 
+    public String _set(String key, String val){
+        try{
+            return jedisCluster.set(key, val);
+        }catch (Exception e){
+            logger.error("Redis集群set()异常， key:" + key);
+        }
+        return null;
+    }
+
     public Long _del(String key){
         try{
             return jedisCluster.del(key);

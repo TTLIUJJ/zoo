@@ -1,8 +1,8 @@
 package com.ackerman.dao;
 
 import org.apache.ibatis.annotations.*;
-
-import java.util.List;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 @Mapper
 public interface MysqlLockDao {
@@ -15,12 +15,16 @@ public interface MysqlLockDao {
     public void insertLock(@Param("mutex") String mutex, @Param("remain") int remain);
 
     @Select({"SELECT remain FROM ", TABLE, " WHERE mutex = #{mutex}"})
-    public int checkLockIfExist(String mutex);
+    public Object checkLockIfExist(String mutex);
+
+    @Select({"SELECT remain FROM ", TABLE, " WHERE mutex = #{mutex}"})
+    public int queryRemain(String mutex);
+
 
     @Update({"UPDATE ", TABLE, " SET remain = #{remain} WHERE mutex = #{mutex}"})
     public int resetLock(@Param("mutex") String mutex, @Param("remain") int remain);
 
-    @Update({"UPDATE ", TABLE, "SET remain = remain - #{buy} WHERE remain >= buy and mutex = #{mutex}"})
+    @Update({"UPDATE ", TABLE, "SET remain = remain - #{buy} WHERE remain >= #{buy} and mutex = #{mutex}"})
     public int tryUpdate(@Param("mutex") String mutex, @Param("buy") int buy);
 
 }

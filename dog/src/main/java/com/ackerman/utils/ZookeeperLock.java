@@ -38,16 +38,16 @@ public class ZookeeperLock {
     private static final String ROOT_PATH = "/zk-locks";
     private static final String NUMBER = "/number";
     private Map<Thread, String> threadMap;
-    private String lockLabel;
+    private String mutex;
     private CuratorFramework client;
 
 
-    public ZookeeperLock(String connectString, String lockLabel){
+    public ZookeeperLock(String connectString, String mutex){
         try{
             this.threadMap = new HashMap<Thread, String>();
-            this.lockLabel = "/" + lockLabel;
+            this.mutex = "/" + mutex;
             RetryPolicy retryPolicy = new ExponentialBackoffRetry(5000, 5);
-            client = CuratorFrameworkFactory.newClient(connectString, 6000, 1000, retryPolicy);
+            client = CuratorFrameworkFactory.newClient(connectString, 60000, 20000, retryPolicy);
             client.start();
         }catch (Exception e){
             e.printStackTrace();
@@ -63,9 +63,9 @@ public class ZookeeperLock {
             String currentLock = client.create()
                     .creatingParentsIfNeeded()
                     .withMode(CreateMode.EPHEMERAL_SEQUENTIAL)
-                    .forPath(ROOT_PATH + lockLabel + NUMBER);
+                    .forPath(ROOT_PATH + mutex + NUMBER);
             String index = currentLock.substring(currentLock.lastIndexOf("/"));
-            List<String> brotherNodes = client.getChildren().forPath(ROOT_PATH + lockLabel);
+            List<String> brotherNodes = client.getChildren().forPath(ROOT_PATH + mutex);
             Collections.sort(brotherNodes);
 
             String prevNode = null;
@@ -76,9 +76,9 @@ public class ZookeeperLock {
                 }
             }
 
-//            System.out.println("**********************************************************");
-//            System.out.println(Thread.currentThread().getName() + "-创建节点:" + index + ", 前一个节点是:" + prevNode);
-//            System.out.println("**********************************************************");
+            System.out.println("**********************************************************");
+            System.out.println(Thread.currentThread().getName() + "-创建节点:" + index + ", 前一个节点是:" + prevNode);
+            System.out.println("**********************************************************");
 
             threadMap.put(Thread.currentThread(), currentLock);
             if(prevNode == null){
@@ -86,7 +86,7 @@ public class ZookeeperLock {
                 return;
             }
             else{
-                final String watchPath = ROOT_PATH + lockLabel + "/" + prevNode;
+                final String watchPath = ROOT_PATH + mutex + "/" + prevNode;
                 final NodeCache cache = new NodeCache(client, watchPath, false);
                 cache.start(true);
                 cache.getListenable().addListener(new NodeCacheListener() {
@@ -94,7 +94,7 @@ public class ZookeeperLock {
                     public void nodeChanged() throws Exception {
 //                        System.out.println("------------------------------------------------------------------");
                         work.run();
-//                        System.out.println(Thread.currentThread().getName() + "-"+ threadLockMap.get(Thread.currentThread()) +", CacheNode被触发, 被删除的节点:" + cache.getPath());
+//                        System.out.println(Thread.currentThread().getName() + "-"+ threadMap.get(Thread.currentThread()) +", CacheNode被触发, 被删除的节点:" + cache.getPath());
 //                        System.out.println("------------------------------------------------------------------");
 
                     }
@@ -113,6 +113,7 @@ public class ZookeeperLock {
             }
         }catch (Exception e){
             logger.error("释放分布式锁出错：" + e.getMessage());
+            e.printStackTrace();
         }
     }
 }
