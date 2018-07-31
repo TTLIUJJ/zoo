@@ -6,23 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="a7be009a-1296-4758-ba68-1091f37917bc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../cat/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cat/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../config/zk/zk2181.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/../config/zk/zk2181.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../config/zk/zk2182.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/../config/zk/zk2182.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../config/zk/zk2183.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/../config/zk/zk2183.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat/src/main/java/com/ackerman/service/NewsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../cat/src/main/java/com/ackerman/service/NewsService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ackerman/dao/MysqlLockDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ackerman/dao/MysqlLockDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ackerman/service/SeckillService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ackerman/service/SeckillService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ackerman/utils/MysqlLock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ackerman/utils/MysqlLock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ackerman/utils/RedisLock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ackerman/utils/RedisLock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ackerman/utils/RedisUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ackerman/utils/RedisUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ackerman/utils/ZookeeperLock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ackerman/utils/ZookeeperLock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ackerman/service/SeckillService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ackerman/service/SeckillService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ackerman/utils/RedisLock.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ackerman/utils/RedisLock.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ackerman/utils/RedisUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ackerman/utils/RedisUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ackerman/utils/ZookeeperLock.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ackerman/utils/ZookeeperLock.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ackerman/utils/ZookeeperLock2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -45,16 +35,16 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="52" />
-          <entry key="html" value="448" />
-          <entry key="java" value="16754" />
+          <entry key="html" value="462" />
+          <entry key="java" value="16797" />
           <entry key="properties" value="94" />
           <entry key="xml" value="59" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="448" />
-          <entry key="JAVA" value="16754" />
+          <entry key="HTML" value="462" />
+          <entry key="JAVA" value="16797" />
           <entry key="PLAIN_TEXT" value="52" />
           <entry key="Properties" value="94" />
           <entry key="XML" value="59" />
@@ -63,8 +53,8 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="14" />
-          <entry key="html" value="4" />
-          <entry key="java" value="41" />
+          <entry key="html" value="5" />
+          <entry key="java" value="43" />
           <entry key="properties" value="5" />
           <entry key="xml" value="6" />
         </counts>
@@ -72,8 +62,8 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="14" />
-          <entry key="HTML" value="4" />
-          <entry key="JAVA" value="41" />
+          <entry key="HTML" value="5" />
+          <entry key="JAVA" value="43" />
           <entry key="Properties" value="5" />
           <entry key="XML" value="6" />
         </counts>
@@ -106,8 +96,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ackerman/service/SeckillService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="181" column="45" lean-forward="true" selection-start-line="181" selection-start-column="45" selection-end-line="181" selection-end-column="45" />
+            <state relative-caret-position="114">
+              <caret line="156" column="44" selection-start-line="156" selection-start-column="44" selection-end-line="156" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -115,14 +105,22 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ackerman/utils/ZookeeperLock2.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="72" column="39" selection-start-line="72" selection-start-column="39" selection-end-line="72" selection-end-column="39" />
+            <state relative-caret-position="1717">
+              <caret line="101" column="31" lean-forward="true" selection-start-line="101" selection-start-column="31" selection-end-line="101" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ackerman/utils/ZookeeperLock.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="630">
+              <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1243#1251#0" expanded="true" />
                 <element signature="e#3415#3618#0" expanded="true" />
                 <element signature="e#3617#3618#0" expanded="true" />
               </folding>
@@ -142,14 +140,37 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ackerman/utils/RedisLock.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1">
-              <caret line="96" column="10" selection-start-line="96" selection-start-column="10" selection-end-line="96" selection-end-column="10" />
+            <state relative-caret-position="459">
+              <caret line="52" column="36" lean-forward="true" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2628#2629#0" expanded="true" />
+                <element signature="e#2670#2671#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ackerman/utils/MysqlLock.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="348">
+              <caret line="32" column="7" lean-forward="true" selection-end-line="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ackerman/dao/MysqlLockDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -177,19 +198,19 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/com/ackerman/DogApplication.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/ackerman/utils/BeanContainer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ackerman/utils/SpringContextContainer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ackerman/dao/MysqlLockDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ackerman/utils/MysqlLock.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ackerman/utils/RedisUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ackerman/utils/RedisLock.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ackerman/controller/IndexController.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ackerman/utils/ZookeeperLock.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ackerman/service/SeckillService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ackerman/utils/ZookeeperLock2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ackerman/service/SeckillService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ackerman/utils/ZookeeperLock.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ackerman/dao/MysqlLockDao.java" />
       </list>
     </option>
   </component>
@@ -334,7 +355,7 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1532963724368" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533029502877" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -421,18 +442,18 @@
       <option name="presentableId" value="Default" />
       <updated>1532791273136</updated>
       <workItem from="1532791278777" duration="1072000" />
-      <workItem from="1532792406863" duration="45825000" />
+      <workItem from="1532792406863" duration="51382000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46897000" />
+    <option name="totallyTimeSpent" value="52454000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="797" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20100144" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20100144" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -443,7 +464,7 @@
       <window_info anchor="bottom" id="Messages" order="0" weight="0.32907802" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.41560283" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.41560283" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.39858156" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -605,33 +626,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ackerman/dao/MysqlLockDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="20" column="41" lean-forward="true" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-299">
-          <caret line="81" column="78" selection-start-line="81" selection-start-column="73" selection-end-line="81" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ackerman/utils/MysqlLock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/1.3.5.RELEASE/spring-boot-autoconfigure-1.3.5.RELEASE.jar!/org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
@@ -718,35 +712,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ackerman/utils/RedisLock.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ackerman/utils/ZookeeperLock.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1">
-          <caret line="96" column="10" selection-start-line="96" selection-start-column="10" selection-end-line="96" selection-end-column="10" />
+        <state relative-caret-position="630">
+          <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3415#3618#0" expanded="true" />
+            <element signature="e#3617#3618#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1717">
+          <caret line="101" column="31" lean-forward="true" selection-start-line="101" selection-start-column="31" selection-end-line="101" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ackerman/service/SeckillService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="181" column="45" lean-forward="true" selection-start-line="181" selection-start-column="45" selection-end-line="181" selection-end-column="45" />
+        <state relative-caret-position="114">
+          <caret line="156" column="44" selection-start-line="156" selection-start-column="44" selection-end-line="156" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ackerman/utils/ZookeeperLock2.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ackerman/utils/MysqlLock.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="72" column="39" selection-start-line="72" selection-start-column="39" selection-end-line="72" selection-end-column="39" />
+        <state relative-caret-position="348">
+          <caret line="32" column="7" lean-forward="true" selection-end-line="52" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1243#1251#0" expanded="true" />
-            <element signature="e#3415#3618#0" expanded="true" />
-            <element signature="e#3617#3618#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ackerman/dao/MysqlLockDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ackerman/utils/RedisLock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="52" column="36" lean-forward="true" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2628#2629#0" expanded="true" />
+            <element signature="e#2670#2671#0" expanded="true" />
           </folding>
         </state>
       </provider>

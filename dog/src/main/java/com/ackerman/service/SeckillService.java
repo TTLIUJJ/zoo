@@ -4,12 +4,7 @@ import com.ackerman.dao.MysqlLockDao;
 import com.ackerman.utils.MysqlLock;
 import com.ackerman.utils.RedisLock;
 import com.ackerman.utils.RedisUtil;
-import com.ackerman.utils.ZookeeperLock2;
-import org.apache.curator.RetryPolicy;
-import org.apache.curator.framework.CuratorFramework;
-import org.apache.curator.framework.CuratorFrameworkFactory;
-import org.apache.curator.retry.ExponentialBackoffRetry;
-import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
+import com.ackerman.utils.ZookeeperLock;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -134,7 +129,7 @@ public class SeckillService {
         final StringBuffer sb = new StringBuffer(header + "<br/>");
         final CountDownLatch countDownLatch = new CountDownLatch(attendance);
         final AtomicInteger luckys = new AtomicInteger(0);
-        final ZookeeperLock2 zookeeperLock = new ZookeeperLock2( goods);
+        final ZookeeperLock zookeeperLock = new ZookeeperLock( goods);
         redisUtil._set(goods, String.valueOf(goodsNum));
 
         try {
@@ -185,32 +180,5 @@ public class SeckillService {
         return "测试异常，请查看是否输入不合理的数据";
     }
 
-
-//    public static void main(String []args) throws Exception{
-//        RetryPolicy retryPolicy = new ExponentialBackoffRetry(5000, 5);
-//        CuratorFramework client = CuratorFrameworkFactory.newClient(
-//                "127.0.0.1:2181", 60000, 20000, retryPolicy
-//        );
-//        client.start();
-//        try{
-//            ZookeeperLock zookeeperLock = new ZookeeperLock("127.0.0.1:2181", "apple");
-//            zookeeperLock.lock(new Runnable() {
-//                @Override
-//                public void run() {
-//                    System.out.println("hello!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-//                }
-//            });
-//
-////        zookeeperLock.unlock();
-//
-//            Thread.sleep(3000);
-//            zookeeperLock.unlock();
-//
-//            zookeeperLock.close();
-//        }catch (Exception e){
-//            e.printStackTrace();
-//        }
-//
-//    }
 
 }

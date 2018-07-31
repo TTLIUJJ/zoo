@@ -1,8 +1,6 @@
 package com.ackerman.dao;
 
 import org.apache.ibatis.annotations.*;
-import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Repository;
 
 @Mapper
 public interface MysqlLockDao {

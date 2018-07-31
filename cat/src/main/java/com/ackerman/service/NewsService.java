@@ -137,7 +137,8 @@ public class NewsService implements InitializingBean{
             long score = (likeScore + commentScore) / createTime;
             news.setScore(score);
         }catch (Exception e){
-            logger.error("计算分值错误", e);
+            logger.error("计算分值错误, ", e.getMessage());
+            e.printStackTrace();
         }
     }
 
@@ -196,10 +197,8 @@ public class NewsService implements InitializingBean{
 
                 while (true){
                     long sleepMills = masterUtil.waitForMillseconds();
-//                    System.out.println("睡眠时间: " + sleepMills);
                     try {
                         TimeUnit.MILLISECONDS.sleep(sleepMills);
-
                     }catch (Exception e){
                         e.printStackTrace();
                     }
@@ -224,10 +223,10 @@ public class NewsService implements InitializingBean{
                     }
                     else{
                         try{
-                            //等待master设置完数据
+                            //等待master设置完数据, 假设10s内可以完成计算
+                            // 比较完善的做法是多次从节点中获取数据，
                             TimeUnit.SECONDS.sleep(10);
                         }catch (Exception e){}
-
                         byte []data = masterUtil.fetchData(nextPath);
                         System.out.println("----------------------------------------------------");
                         System.out.println("从节点中获取数据:" + new String(data));
