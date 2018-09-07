@@ -1,6 +1,6 @@
 package com.ackerman.controller;
 
-import com.ackerman._thrid.*;
+import com.ackerman._third.*;
 import com.ackerman.model.Comment;
 import com.ackerman.model.News;
 import com.ackerman.service.CommentService;

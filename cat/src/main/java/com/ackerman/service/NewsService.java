@@ -1,6 +1,6 @@
 package com.ackerman.service;
 
-import com.ackerman._thrid.UserModel;
+import com.ackerman._third.UserModel;
 import com.ackerman.dao.NewsDao;
 import com.ackerman.model.News;
 import com.ackerman.utils.*;

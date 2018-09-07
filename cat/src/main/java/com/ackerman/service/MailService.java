@@ -1,6 +1,6 @@
 package com.ackerman.service;
 
-import com.ackerman._thrid.UserModel;
+import com.ackerman._third.UserModel;
 import com.ackerman.utils.KafkaUtil;
 import com.alibaba.fastjson.JSON;
 import org.slf4j.Logger;

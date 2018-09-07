@@ -1,6 +1,6 @@
 package com.ackerman.controller;
 
-import com.ackerman._thrid.*;
+import com.ackerman._third.*;
 import com.ackerman.service.MailService;
 import com.ackerman.service.SSOService;
 import org.slf4j.Logger;

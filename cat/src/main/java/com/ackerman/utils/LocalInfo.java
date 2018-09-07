@@ -1,6 +1,6 @@
 package com.ackerman.utils;
 
-import com.ackerman._thrid.UserModel;
+import com.ackerman._third.UserModel;
 import org.springframework.stereotype.Component;
 
 import java.util.HashMap;

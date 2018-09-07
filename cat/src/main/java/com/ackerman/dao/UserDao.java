@@ -1,6 +1,6 @@
 package com.ackerman.dao;
 
-import com.ackerman._thrid.UserModel;
+import com.ackerman._third.UserModel;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;

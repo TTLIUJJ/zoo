@@ -1,6 +1,6 @@
 package com.ackerman.service;
 
-import com.ackerman._thrid.*;
+import com.ackerman._third.*;
 import com.ackerman.utils.LocalInfo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -58,8 +58,8 @@ public class SSOService {
         }
         else {
             String global = createGlobalSession(request, response, user);
-            String local = createLocalSession(request, response, Common.LOCAL_TICKET_NEWS, user);
-            addTicketSet(global, Common.LOCAL_TICKET_NEWS, local);
+            String local = createLocalSession(request, response, Common.LOCAL_TICKET_CAT, user);
+            addTicketSet(global, Common.LOCAL_TICKET_CAT, local);
         }
 
         return user;
@@ -209,7 +209,7 @@ public class SSOService {
 
     public boolean verifyOneTimeTicket(String ticket){
         try{
-            return common.verifyOneTimeTicket(Common.RGISTER_TICKET, ticket);
+            return common.verifyOneTimeTicket(Common.REGISTER_TICKET, ticket);
         }catch (Exception e){
             logger.error("邮箱验证失败", e);
         }

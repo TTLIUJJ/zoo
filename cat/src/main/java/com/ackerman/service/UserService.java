@@ -1,8 +1,7 @@
 package com.ackerman.service;
 
-import com.ackerman._thrid.UserModel;
+import com.ackerman._third.UserModel;
 import com.ackerman.dao.UserDao;
-import com.ackerman.utils.JedisClusterUtil;
 import com.ackerman.utils.JedisUtil;
 import com.ackerman.utils.LocalInfo;
 import org.slf4j.Logger;
